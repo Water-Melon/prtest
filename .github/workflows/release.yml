@@ -18,6 +18,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build Info
+      env:
+        AAA: ${{ ! startsWith('centos', 'centos') || '' && 'abc' }}
+        BBB: ${{ ! startsWith('debian', 'centos') || '' && 'abc' }}
       run: |
         echo ${{ github.event.pull_request.head.sha }}
         echo ${{ github.sha }}
+        echo ${{ env.AAA }}
+        echo ${{ env.BBB }}
