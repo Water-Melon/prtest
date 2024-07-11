@@ -25,7 +25,7 @@
       ],
       "description": "Custom manager for LuaRocks",
       "matchStrings": [
-        "\"(?<depName>[^\"]+)\\s*==\\s*(?<currentValue>[^\"]+)\""
+        "(?<depName>[^\"]+)\\s*==\\s*(?<currentValue>[^\"]+)"
       ],
       "datasourceTemplate": "luarocks"
     }
