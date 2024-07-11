@@ -27,8 +27,7 @@
       "matchStrings": [
         "(?<depName>[^\"]+)\\s*==\\s*(?<currentValue>[^\"]+)"
       ],
-      "datasourceTemplate": "luarocks",
-      "versioning": "loose"
+      "datasourceTemplate": "luarocks"
     }
   ]
 }
