@@ -26,3 +26,12 @@ jobs:
         echo ${{ github.sha }}
         echo ${{ env.AAA }}
         echo ${{ env.BBB }}
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run Renovate
+        uses: renovatebot/github-action@v34
+        with:
+          log-level: debug
