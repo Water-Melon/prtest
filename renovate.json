@@ -1,9 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    // https://docs.renovatebot.com/presets-config/#configbest-practices
     "config:best-practices",
-    // https://docs.renovatebot.com/presets-default/#rebasestaleprs
     ":rebaseStalePrs"
   ],
   "configMigration": true,
@@ -17,11 +15,10 @@
     "renovate"
   ],
   "branchConcurrentLimit": 1,
-  "enabledManagers": [
-    // "github-actions"
-  ],
+  "enabledManagers": [],
   "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         ".*\\.rockspec$",
         ".*\\.rock$"
