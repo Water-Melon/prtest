@@ -19,5 +19,18 @@
   "branchConcurrentLimit": 1,
   "enabledManagers": [
     // "github-actions"
+  ],
+  "customManagers": [
+    {
+      "fileMatch": [
+        "rockspec$",
+        "rock$"
+      ],
+      "description": "Custom manager for LuaRocks",
+      "matchStrings": [
+        "version\\s*=\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "datasourceTemplate": "luarocks"
+    }
   ]
 }
