@@ -35,3 +35,4 @@ jobs:
         uses: renovatebot/github-action@v40.2.2
         with:
           log-level: debug
+          token: ${{ secrets.GITHUB_TOKEN }}
