@@ -28,7 +28,6 @@
         "(?<depName>[^\"]+)\\s*==\\s*(?<currentValue>[^\"]+)"
       ],
       "enabled": true,
-      "logger": "debug",
       "datasourceTemplate": "luarocks"
     }
   ]
