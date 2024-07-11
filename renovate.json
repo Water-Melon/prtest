@@ -1,6 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    // https://docs.renovatebot.com/presets-config/#configbest-practices
+    "config:best-practices",
+    // https://docs.renovatebot.com/presets-default/#rebasestaleprs
+    ":rebaseStalePrs"
+  ],
+  "configMigration": true,
+  "baseBranches": [
+    "$default",
+    "master"
+  ],
+  "labels": [
+    "dependencies",
+    "chore",
+    "renovate"
+  ],
+  "branchConcurrentLimit": 1,
+  "enabledManagers": [
+    // "github-actions"
   ]
 }
