@@ -23,12 +23,13 @@
   "customManagers": [
     {
       "fileMatch": [
-        "rockspec$",
-        "rock$"
+        ".*\\.rockspec$",
+        ".*\\.rock$"
       ],
       "description": "Custom manager for LuaRocks",
       "matchStrings": [
-        "version\\s*=\\s*\"(?<currentValue>[^\"]+)\""
+        "version\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
+        "\"(?<depName>[^\"]+)\"\\s*:\\s*\"(?<currentValue>[^\"]+)\""
       ],
       "datasourceTemplate": "luarocks"
     }
