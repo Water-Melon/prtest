@@ -19,9 +19,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        ".*\\.rockspec$",
-        ".*\\.rock$"
+      "managerFilePatterns": [
+        "/.*\\.rockspec$/",
+        "/.*\\.rock$/"
       ],
       "description": "Custom manager for LuaRocks",
       "matchStrings": [
