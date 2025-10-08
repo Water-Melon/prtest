@@ -26,6 +26,8 @@ jobs:
         echo ${{ github.sha }}
         echo ${{ env.AAA }}
         echo ${{ env.BBB }}
+        df -h
+
   renovate:
     runs-on: ubuntu-latest
     steps:
